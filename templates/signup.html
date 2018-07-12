@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    Hello there!, Sign Up below
+{% endblock %}
+
+{% block body %}
+   <form action="{{ url_for('dashbord') }}" method="post">
+      Name: <input type="text" name="name" placeholder="enter the name"><br>
+      Password: <input type="text" name="password" placeholder="enter the password"><br>
+        <button>Submit</button>
+    </form>
+{% endblock %}

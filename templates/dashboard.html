@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    Welcome
+{% endblock %}
+
+{% block body %}
+<!--serch using zipcode and city-->
+    <h1>Welcome, can search below</h1>
+      <div class="search-container">
+    <form action="{{ url_for('display') }}" method="post">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+        <button>Serch</button>
+
+
+   <h3>y</h3>
+   <!--to check the temprature andother parameters of the place-->
+<a ref="{{ url_for('temp') }}">check the temprature</a>
+
+<!--if the user wants to logout-->
+<aref="{{url_for('index')}}">logout</aref>
+{% endblock %}
