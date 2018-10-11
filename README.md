@@ -1,4 +1,4 @@
-# Project 1
+# Simple Project on Flask
 
 Web Programming with Python and JavaScript
 
